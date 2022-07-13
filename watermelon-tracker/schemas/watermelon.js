@@ -4,13 +4,13 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Watermelon Tally Number',
-      name: 'watermelonTally',
+      title: 'Watermelon Count',
+      name: 'count',
       type: 'string',
     },
     {
-      title: 'Date Bought',
-      name: 'dateBought',
+      title: 'Purchase Date',
+      name: 'purchased',
       type: 'date',
     },
     {
@@ -19,8 +19,13 @@ export default {
       type: 'string',
     },
     {
-      title: 'Brand',
-      name: 'brand',
+      title: 'Farm Origin',
+      name: 'origin',
+      type: 'string',
+    },
+    {
+      title: 'Variety',
+      name: 'variety',
       type: 'string',
     },
     {
@@ -30,6 +35,16 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      title: 'Sweet Scale',
+      name: 'sweetScale',
+      type: 'string',
+    },
+    {
+      title: 'Texture Scale',
+      name: 'textureScale',
+      type: 'string',
     },
     {
       title: 'Rating',
