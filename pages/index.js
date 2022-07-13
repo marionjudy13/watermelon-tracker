@@ -26,7 +26,7 @@ export default function Home({ watermelons }) {
       </Head>
       <div className="wrapper">
         <div className="header">
-          <img src="/watermelon-metor.svg" />
+          <img src="/watermelon-metor.svg" alt="Watermelon Metor" />
           <h1>Watermelon Meter</h1>
         </div>
         <table>
@@ -43,8 +43,8 @@ export default function Home({ watermelons }) {
             </tr>
           </thead>
           <tbody>
-            {watermelons.map((watermelon) => (
-              <tr>
+            {watermelons.map((watermelon, count) => (
+              <tr key={count}>
                 <td>{watermelon.count}</td>
                 <td>{watermelon.purchased}</td>
                 <td>{watermelon.purchaseLocation}</td>
