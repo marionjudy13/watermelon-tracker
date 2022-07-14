@@ -1,8 +1,9 @@
 import { urlFor } from '../lib/sanity'
+import styles from './tables.module.scss'
 
 export default function Table(carrot) {
   return (
-    <table>
+    <table className={styles.wrapper}>
       <thead>
         <tr>
           <th>Count</th>

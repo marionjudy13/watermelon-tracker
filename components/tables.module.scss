@@ -1,0 +1,32 @@
+.wrapper {
+    background-color: #fff;
+    border-collapse: collapse;
+    color: #600000;
+    font-family: input-mono, monospace;
+    z-index: 1;
+
+    img {
+        max-width: 100px;
+    }
+
+    th,
+    td {
+        border: 1px solid #600000;
+        text-align: center;
+    }
+    
+    th {
+        color: #600000;
+        font-family: input-mono, monospace;
+        font-weight: 700;
+        font-style: normal;
+        font-size: .7rem;
+        padding: 14px 20px 10px;
+        background-color: #00EEA7;
+    }
+    
+    td {
+        font-size: .7rem;
+        padding: 14px 20px 10px;
+    }
+}

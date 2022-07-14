@@ -7,21 +7,15 @@ body {
   font-family: korolev, Roboto, Helvetica Neue, sans-serif;
 }
 
-body {
-  background: #FF6DBC;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #FF2950, #FF6DBC);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #FF2950, #FF6DBC);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-  display: block;
-  height: 100vh;
-  width: 100%;  
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+.polka-dot {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#fff 1%, transparent 20%);
+  background-position: 0;
+  background-size: 5px 5px;
+  z-index: 0;
 }
 
 * {
@@ -39,6 +33,7 @@ a {
 
 .header {
   text-align: center;
+  z-index: 1;;
 }
 
 .header img {
@@ -54,30 +49,4 @@ h1 {
   margin-bottom: 20px;
   margin-top: 10px;
   text-transform: uppercase;
-}
-
-table {
-  border-collapse: collapse;
-  color: #fff;
-  font-family: input-mono, monospace;}
-
-table,
-th,
-td {
-  border: 1px solid #fff;
-  text-align: center;
-}
-
-th {
-  color: #600000;
-  font-family: input-mono, monospace;
-  font-weight: 700;
-  font-style: normal;
-  font-size: .7rem;
-  padding: 14px 20px 10px;
-  background-color: #00EEA7;
-}
-td {
-  font-size: .7rem;
-  padding: 14px 20px 10px;
 }
