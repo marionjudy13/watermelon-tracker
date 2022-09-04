@@ -7,11 +7,25 @@ body {
   font-family: korolev, Roboto, Helvetica Neue, sans-serif;
 }
 
-.polka-dot {
-  display: flex;
-  position: absolute;
+main {
+  background: #FF6DBC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FF2950, #FF6DBC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FF2950, #FF6DBC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: block;
+  position: fixed;
+}
+
+.polka-dot {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
   background-image: radial-gradient(#fff 1%, transparent 20%);
   background-position: 0;
   background-size: 5px 5px;
