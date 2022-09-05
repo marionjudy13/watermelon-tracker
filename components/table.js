@@ -25,9 +25,15 @@ export default function Table(carrot) {
             <td>{watermelon.purchaseLocation}</td>
             <td>{watermelon.origin}</td>
             <td>{watermelon.variety}</td>
-            <td>
-              <img src={urlFor(watermelon.image)} />
-            </td>
+            {watermelon.image ? (
+              <td>
+                <img src={urlFor(watermelon.image)} />
+              </td>
+            ) : (
+              <td>
+                <span>No Image</span>
+              </td>
+            )}
             <td>{watermelon.sweetScale}</td>
             <td>{watermelon.textureScale}</td>
             <td>{watermelon.rating}</td>
