@@ -28,7 +28,7 @@ export default function Home({ watermelons }) {
       <div className="wrapper">
         <div className="header">
           <img src="/watermelon-metor.svg" alt="Watermelon Metor" />
-          <h1>Snatch from the Patch</h1>
+          <h1>Snatch from the&nbsp;Patch</h1>
           <h2>On a Mission for the Best Melons</h2>
         </div>
         <Table watermelons={watermelons} />

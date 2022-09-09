@@ -1,5 +1,5 @@
 import { urlFor } from '../lib/sanity'
-import styles from './tables.module.scss'
+import styles from './table.module.scss'
 
 export default function Table(carrot) {
   return (

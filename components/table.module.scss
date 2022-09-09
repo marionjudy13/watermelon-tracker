@@ -1,12 +1,13 @@
-.wrapper {
+table.wrapper {
     background-color: #fff;
     border-collapse: collapse;
     color: #600000;
     font-family: input-mono, monospace;
     z-index: 1;
 
-    img {
-        max-width: 100px;
+    /* Zebra striping */
+    tr:nth-of-type(even) {
+        background: #f6f6f6;
     }
 
     th,
@@ -28,5 +29,9 @@
     td {
         font-size: .7rem;
         padding: 14px 20px 10px;
+    }
+
+    img {
+        max-width: 100px;
     }
 }
