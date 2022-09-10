@@ -1,7 +1,7 @@
 import { urlFor } from '../lib/sanity'
 import styles from './table.module.scss'
 
-export default function Table(carrot) {
+export default function Table(watermelon) {
   return (
     <table className={styles.wrapper}>
       <thead>
@@ -18,7 +18,7 @@ export default function Table(carrot) {
         </tr>
       </thead>
       <tbody>
-        {carrot.watermelons.map((watermelon, count) => (
+        {watermelon.watermelons.map((watermelon, count) => (
           <tr key={count}>
             <td>{watermelon.count}</td>
             <td>{watermelon.purchased}</td>
