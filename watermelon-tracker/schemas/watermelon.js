@@ -6,7 +6,7 @@ export default {
     {
       title: 'Watermelon Count',
       name: 'count',
-      type: 'string',
+      type: 'number',
     },
     {
       title: 'Purchase Date',
@@ -54,6 +54,13 @@ export default {
       options: {
         list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       },
+    },
+  ],
+  orderings: [
+    {
+      title: 'Watermelon Count',
+      name: 'watermelonCountAsc',
+      by: [{ field: 'count', direction: 'asc' }],
     },
   ],
 }

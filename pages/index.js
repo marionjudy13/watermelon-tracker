@@ -4,7 +4,7 @@ import styles from '../styles/home.module.scss'
 import { sanityClient } from '../lib/sanity'
 import Table from '../components/table'
 
-const watermelonQuery = `*[_type == "watermelon"] {
+const watermelonQuery = `*[_type == "watermelon"] | order(count asc) {
   count,
   purchased,
   purchaseLocation,

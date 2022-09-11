@@ -2,9 +2,12 @@ import { urlFor } from '../lib/sanity'
 import styles from './table.module.scss'
 
 export default function Table(watermelons) {
-  const sortedWatermelons = watermelons.watermelons.sort((a, b) => {
-    return a.count - b.count
-  })
+  // Switched the sort to the Sanity query!  Keeping this here for my reference.
+  // const sortedWatermelons = watermelons.watermelons.sort((a, b) => {
+  //   return a.count - b.count
+  // })
+  console.log({ watermelons })
+
   return (
     <table className={styles.wrapper}>
       <thead>
