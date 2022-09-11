@@ -1,7 +1,10 @@
 import { urlFor } from '../lib/sanity'
 import styles from './table.module.scss'
 
-export default function Table(watermelon) {
+export default function Table(watermelons) {
+  const sortedWatermelons = watermelons.watermelons.sort((a, b) => {
+    return a.count - b.count
+  })
   return (
     <table className={styles.wrapper}>
       <thead>
@@ -18,7 +21,7 @@ export default function Table(watermelon) {
         </tr>
       </thead>
       <tbody>
-        {watermelon.watermelons.map((watermelon, count) => (
+        {watermelons.watermelons.map((watermelon, count) => (
           <tr key={count}>
             <td>{watermelon.count}</td>
             <td>{watermelon.purchased}</td>
