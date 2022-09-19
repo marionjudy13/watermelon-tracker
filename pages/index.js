@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/home.module.scss'
 import { sanityClient } from '../lib/sanity'
 import Table from '../components/table'
+import WorkInProgress from '../components/work-in-progress'
 
 const watermelonQuery = `*[_type == "watermelon"] | order(count asc) {
   count,
@@ -18,6 +19,7 @@ const watermelonQuery = `*[_type == "watermelon"] | order(count asc) {
 export default function Home({ watermelons }) {
   return (
     <div className={styles.container}>
+      <WorkInProgress />
       <div className="polka-dot" />
       <Head>
         <title>Snatch from the Patch</title>

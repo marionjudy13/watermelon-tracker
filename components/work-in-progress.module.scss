@@ -1,0 +1,22 @@
+.wrapper {
+    display: block;
+    position: absolute;
+    padding: 20px 100px 18px;
+    z-index: 1000;
+    top: -20px;
+    left: -120px;
+    transform: rotate(-45deg);
+    background-color: #000;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+
+    @media (min-width: 768px) {
+        font-size: 1.25em;
+        top: 20px;
+        left: -100px;
+        width: 500px;
+        transform: rotate(-45deg);
+    }
+}
