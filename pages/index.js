@@ -19,7 +19,7 @@ const watermelonQuery = `*[_type == "watermelon"] | order(count asc) {
 export default function Home({ watermelons }) {
   return (
     <div className={styles.container}>
-      <WorkInProgress />
+      {/* <WorkInProgress /> */}
       <div className="polka-dot" />
       <Head>
         <title>Snatch from the Patch</title>
