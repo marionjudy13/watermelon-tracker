@@ -6,7 +6,6 @@ export default function Table(watermelons) {
   // const sortedWatermelons = watermelons.watermelons.sort((a, b) => {
   //   return a.count - b.count
   // })
-  console.log({ watermelons })
 
   return (
     <table className={styles.wrapper}>
